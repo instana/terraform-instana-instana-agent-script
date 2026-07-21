@@ -1,0 +1,7 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# Do NOT commit terraform.tfvars to version control — it contains secrets.
+
+instana_agent_key     = "your-instana-agent-key"
+instana_endpoint_host = "ingress-pink-saas.instana.rocks"
+
+# instana_download_key = "your-instana-download-key"  # optional; defaults to agent key
