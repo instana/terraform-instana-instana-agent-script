@@ -79,7 +79,7 @@ variable "custom_config_yaml" {
     Leave null to skip custom configuration.
 
     Example:
-      custom_config_yaml = file("${path.module}/instana-config.yaml")
+      custom_config_yaml = file("$${path.module}/instana-config.yaml")
   EOT
   type        = string
   default     = null
