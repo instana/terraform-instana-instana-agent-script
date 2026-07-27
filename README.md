@@ -205,11 +205,18 @@ All outputs are `sensitive = true` because they contain the baked-in agent key.
 
 ### Linux
 
-| Distribution | Package manager |
-|---|---|
-| Debian 11 / 12 | `apt-get` |
-| Ubuntu 20.04 / 22.04 / 24.04 | `apt-get` |
-| Amazon Linux 2 / 2023 | `yum` |
+| Distribution | Package manager | Notes |
+|---|---|---|
+| Debian 11 / 12 | `apt-get` | |
+| Ubuntu 20.04 / 22.04 / 24.04 | `apt-get` | |
+| Fedora 38+ | `dnf` | |
+| RHEL / CentOS Stream 8+ | `dnf` | Rocky Linux & AlmaLinux also supported |
+| RHEL 7 / CentOS 7 | `yum` | |
+| Amazon Linux 2 / 2023 | `yum` | |
+| SLES 12 / 15 | `zypper` | |
+| openSUSE Leap / Tumbleweed | `zypper` | |
+| Alpine Linux 3.x | `apk` | Uses OpenRC instead of systemd |
+| Arch Linux / Manjaro | `pacman` | |
 
 ### Windows
 

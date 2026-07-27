@@ -15,8 +15,12 @@
 # It works with any Terraform root module targeting AWS, Azure, or GCP.
 #
 # Supported Linux distributions:
-#   - Debian / Ubuntu  (apt-get)
-#   - Amazon Linux 2 / 2023  (yum)
+#   - Debian / Ubuntu              (apt-get)
+#   - Fedora / RHEL 8+ / Rocky / AlmaLinux  (dnf)
+#   - Amazon Linux 2 / 2023 / RHEL 7 / CentOS 7  (yum)
+#   - SLES 12/15 / openSUSE Leap / Tumbleweed  (zypper)
+#   - Alpine Linux 3.x             (apk)
+#   - Arch Linux / Manjaro         (pacman)
 #
 # Supported Windows versions:
 #   - Windows Server 2019 / 2022
