@@ -1,4 +1,4 @@
-# terraform-instana-agent-script
+# terraform-instana-instana-agent-script
 
 A cloud-agnostic Terraform module that renders an Instana agent bootstrap script for **Linux and
 Windows VMs**. Call it once, then pass the output directly to your existing AWS, GCP, or Azure VM
@@ -20,7 +20,7 @@ resource — no cloud-specific agent module required.
 
 ```hcl
 module "instana_agent_script" {
-  source = "git::https://github.com/your-org/terraform-instana-agent-script.git"
+  source = "git::https://github.com/your-org/terraform-instana-instana-agent-script.git"
 
   instana_agent_key     = var.instana_agent_key
   instana_endpoint_host = "ingress-pink-saas.instana.rocks"
