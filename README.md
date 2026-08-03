@@ -1,4 +1,4 @@
-# terraform-instana-instana-agent-script
+# Instana agent script - Terraform Module
 
 A cloud-agnostic Terraform module that renders an Instana agent bootstrap script for **Linux and
 Windows VMs**. Call it once, then pass the output directly to your existing AWS, GCP, or Azure VM
