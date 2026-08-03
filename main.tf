@@ -1,5 +1,5 @@
 # ==============================================================================
-# terraform-instana-agent-script
+# terraform-instana-instana-agent-script
 # ==============================================================================
 #
 # A cloud-agnostic Terraform module that renders an Instana agent bootstrap
