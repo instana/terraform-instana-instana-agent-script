@@ -20,7 +20,7 @@ resource — no cloud-specific agent module required.
 
 ```hcl
 module "instana_agent_script" {
-  source = "git::https://github.com/your-org/terraform-instana-instana-agent-script.git"
+  source = "instana/instana-agent-script/instana"
 
   instana_agent_key     = var.instana_agent_key
   instana_endpoint_host = "ingress-pink-saas.instana.rocks"
