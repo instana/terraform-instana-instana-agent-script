@@ -73,6 +73,21 @@ variable "agent_max_memory" {
   }
 }
 
+variable "extra_setup_flags" {
+  description = <<-EOT
+    Map of additional flags passed verbatim to the Instana setup script
+    (https://setup.instana.io/agent).
+
+    Key   = short flag letter (no leading dash).
+    Value = argument string; use an empty string "" for standalone boolean flags.
+
+    Example:
+      extra_setup_flags = { "m" = "aws" }
+  EOT
+  type        = map(string)
+  default     = {}
+}
+
 variable "custom_config_yaml" {
   description = <<-EOT
     Raw YAML string to append to the Instana agent's configuration.yaml after installation.
