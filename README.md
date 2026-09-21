@@ -188,6 +188,7 @@ Windows (`C:\instana\agent\etc\instana\`).
 | `instana_endpoint_port` | `number` | | `443` | Instana backend port (1–65535). |
 | `instana_agent_mode` | `string` | | `"dynamic"` | Agent mode. One of: `APM`, `INFRASTRUCTURE`, `AWS`, `KUBERNETES`, `dynamic`. |
 | `agent_max_memory` | `number` | | `544` | Agent heap memory in MB (512–8192). Increase for large environments. |
+| `extra_setup_flags` | `map(string)` | | `{}` | Additional flags forwarded to the Instana setup script. Each map entry becomes a `-<key> <value>` argument (e.g. `{ "m" = "aws" }` → `-m aws`). Omit the value or set it to `""` for standalone flags (e.g. `{ "v" = "" }` → `-v`). New script flags can be passed here without any module code changes. |
 | `custom_config_yaml` | `string` | | `null` | Raw YAML string appended to `configuration.yaml` after agent installation. |
 
 ## Outputs

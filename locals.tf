@@ -19,7 +19,7 @@ locals {
     instana_agent_mode        = var.instana_agent_mode
     agent_max_memory          = var.agent_max_memory
     custom_config_yaml_base64 = local.custom_config_yaml_base64
-    instana_monitoring_scope  = var.instana_monitoring_scope
+    extra_setup_flags         = var.extra_setup_flags
   }
 
   # ---------------------------------------------------------------------------
