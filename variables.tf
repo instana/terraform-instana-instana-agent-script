@@ -73,6 +73,18 @@ variable "agent_max_memory" {
   }
 }
 
+variable "instana_monitoring_scope" {
+  description = <<-EOT
+    Cloud provider scope passed to the Instana setup script via the -m flag.
+    When set, activates the corresponding infrastructure sensor
+    (e.g. "aws" enables the AWS sensor so EC2, RDS, ELB, S3, etc. are discovered).
+    Leave null (default) to omit the flag entirely, keeping the module cloud-agnostic.
+
+  EOT
+  type        = string
+  default     = null
+}
+
 variable "custom_config_yaml" {
   description = <<-EOT
     Raw YAML string to append to the Instana agent's configuration.yaml after installation.

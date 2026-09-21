@@ -214,6 +214,9 @@ export AGENT_MAX_MEM
     -d "$INSTANA_DOWNLOAD_KEY" \
     -t "$INSTANA_AGENT_MODE" \
     -e "$INSTANA_ENDPOINT" \
+%{ if instana_monitoring_scope != null && instana_monitoring_scope != "" ~}
+    -m "${instana_monitoring_scope}" \
+%{ endif ~}
     -s \
     -y \
     || error_exit "Instana agent installation failed. Check the logs above for details."
